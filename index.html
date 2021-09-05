@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <title>날래하라우</title>
+</head>
+<body>
+  <div id=centre>
+    <h2 id=clock></h2>
+    <form id="form" class="hidden">
+      <input id="text-form" 
+      type="text" 
+      placeholder="기래, 너는 이름이 뭐이간?" 
+      required minlength="2" 
+      onfocus="this.placeholder = ''"
+      onblur="this.placeholder = '기래, 너는 이름이 뭐이간?'" />
+      <input type="submit" value="입네다">
+    </form>
+    <span id="greeting"></span>
+    <form id="todoform">
+      <input type="text"
+       placeholder="뭐이 해야 하네? 말해보라우" 
+       onfocus="this.placeholder = ''"
+      onblur="this.placeholder = '뭐이 해야 하네? 말해보라우'" />
+       
+       
+    </form>
+    <ul id="todolist"></ul>
+  </div>
+  <div id ="weather">
+    <div></div>
+    <div></div>
+  </div>
+  <script src="src/index.js"></script>
+  <script src="src/clock.js"></script>
+  <script src="src/todolist.js"></script>
+  <script src="src/weather.js"></script>
+  <script src="src/background.js"></script>
+</body>
+</html>
